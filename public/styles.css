@@ -1,0 +1,153 @@
+body {
+    padding: 20px;
+    background: url(image/bg.svg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.79);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #00ff00;
+}
+
+label {
+    color: #00ff00;
+}
+
+.centered-textarea {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    background: url(image/hero.webp);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    resize: none;
+}
+
+[class^="centered-textarea"]::before {
+    color: neongreen;
+    content: attr(data-prefix);
+}
+
+.btn-primary {
+    background-color: #000000;
+    border: 1px solid #00ff00;
+}
+
+.btn-primary:hover {
+    background-color: #000000;
+    border: 1px solid #00ff00;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.79);
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #00ff00;
+    margin-top: 50px;
+    border-top: 1px solid #00ff00;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.container-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container-buttons .btn {
+    margin: 5px;
+}
+
+#result {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.center-placeholder::placeholder {
+    text-align: center;
+}
+
+.form-check {
+    display: flex;
+    margin-top: 10px;
+    padding: 14px;
+    align-items: center;
+    border: 1px solid #00ff00;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-color: #00ff00;
+    background-color: #000000;
+}
+
+.form-check:hover {
+    background-color: #00ff00;
+    border-color: #000000;
+}
+
+.form-check-input {
+    margin-right: 10px;
+    opacity: 0;
+}
+
+.disable {
+    display: none;
+}
+
+#inputOfPrefix,
+#inputOfAdmin {
+    padding: 13px;
+    width: 200px;
+    border: 1px solid #00ff00;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-color: #00ff00;
+    background-color: #000000;
+}
+
+#listOfCommands,
+#listOfCommandsEvent,
+#prefixOfCommands,
+#adminOfCommands {
+    border: none !important;
+}
+
+#listOfCommands:not(.modal),
+#listOfCommandsEvent:not(.modal),
+#prefixOfCommands:not(.modal),
+#adminOfCommands:not(.modal) {
+    box-shadow: none !important;
+}
